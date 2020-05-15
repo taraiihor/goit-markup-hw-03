@@ -31,7 +31,6 @@ ul {
   margin: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
 }
 
 .list {
@@ -380,7 +379,6 @@ ul {
   flex-wrap: wrap;
   align-content: center;
   margin-bottom: 94px;
-  outline: 2px solid tomato;
 }
 
 .element {
