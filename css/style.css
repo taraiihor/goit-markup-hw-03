@@ -4,10 +4,34 @@
   --accent-color: #2196f3;
   --button: #ffffff;
 }
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
 body {
   color: var(--primery-text-color);
   font-family: Roboto, sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+.page-header {
+}
+
+.continer {
+  width: 1230px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid tomato;
 }
 
 .list {
@@ -16,6 +40,7 @@ body {
 }
 
 .logo {
+  margin-right: 86px;
   color: black;
   font-family: Raleway, sans-serif;
   font-style: normal;
@@ -29,7 +54,20 @@ body {
   color: var(--accent-color);
 }
 
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--title-text-color);
   font-style: normal;
   font-weight: 500;
@@ -47,7 +85,15 @@ body {
   color: var(--accent-color);
 }
 
-.mail .link {
+.mail-nav {
+  display: flex;
+  margin-left: auto;
+}
+.mail-nav .item + .item {
+  margin-left: 30px;
+}
+
+.mail-nav .link-mail {
   color: var(--primery-text-color);
   font-style: normal;
   font-weight: 500;
@@ -56,9 +102,12 @@ body {
   letter-spacing: 0.02em;
 }
 
-.mail .link:hover,
-.mail .link:focus {
+.mail-nav .link-mail:hover,
+.mail-nav .link-mail:focus {
   color: var(--accent-color);
+}
+.hero {
+  text-align: center;
 }
 
 .hero .title {
@@ -70,16 +119,23 @@ body {
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
+  margin-top: 0;
+  margin-bottom: 46px;
 }
 
 .hero .button {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  height: 50px;
+
   background-color: var(--accent-color);
   color: var(--button);
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -87,9 +143,22 @@ body {
 /* секция особености */
 .section-features .title {
   color: var(--title-text-color);
+  margin: 0;
+  text-align: center;
+}
+
+.features-card {
+  display: flex;
+}
+
+.features-card .icon + .icon {
+  margin-left: 30px;
 }
 
 .section-features .subtitle {
+  margin-top: 30;
+  margin-bottom: 10px;
+
   color: var(--title-text-color);
   font-style: normal;
   font-weight: bold;
@@ -100,6 +169,9 @@ body {
 }
 
 .section-features .text {
+  margin-top: 0;
+  margin-bottom: 94px;
+
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -109,6 +181,8 @@ body {
 
 /* секция чем мы занимаемся */
 .section-work .title {
+  margin-top: 0;
+  margin-bottom: 50;
   color: var(--title-text-color);
   font-style: normal;
   font-weight: bold;
@@ -118,12 +192,26 @@ body {
   letter-spacing: 0.03em;
 }
 
+.work-cards {
+  display: flex;
+}
+
+.work-cards .card + .card {
+  margin-left: 30px;
+  margin-bottom: 94px;
+}
+
 .section-work .subtitle {
   color: var(--title-text-color);
 }
 
 .section-work .desc {
-  background-color: var(--accent-color);
+  margin: 0;
+  width: 380px;
+  height: 70px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background-color: rgba(47, 48, 58, 0.8);
   color: var(--button);
   font-style: normal;
   font-weight: bold;
@@ -135,7 +223,17 @@ body {
 }
 
 /* секция наша команда */
+
+.section-team.fone {
+  background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .section-team .title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
   color: var(--title-text-color);
   font-style: normal;
   font-weight: bold;
@@ -145,7 +243,17 @@ body {
   letter-spacing: 0.03em;
 }
 
+.section-team-card {
+  display: flex;
+}
+
+.section-team-card .card + .card {
+  margin-left: 30px;
+}
+
 .section-team .autor {
+  margin-top: 0;
+  margin-bottom: 10px;
   color: var(--title-text-color);
   font-style: normal;
   font-weight: 500;
@@ -156,6 +264,7 @@ body {
 }
 
 .section-team .text {
+  margin-top: 0;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -165,7 +274,13 @@ body {
 }
 
 /* секция партнеры */
+.section-partners {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .section-partners .title {
+  margin-top: 0;
+  margin-bottom: 50px;
   color: var(--title-text-color);
   font-style: normal;
   font-weight: bold;
@@ -173,6 +288,15 @@ body {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.section-partners-icon {
+  display: flex;
+  justify-content: center;
+}
+
+.section-partners-icon .icon + .icon {
+  margin-left: 30px;
 }
 
 /* подвал */
@@ -183,10 +307,24 @@ body {
   line-height: 1.18;
   letter-spacing: 0.03em;
 }
+.footer-t {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+}
 
 .footer {
   color: var(--button);
 }
+
+.adress {
+  display: flex;
+}
+
 .address .text {
   color: var(--button);
   font-style: normal;
@@ -237,8 +375,28 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
+.items-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-bottom: 94px;
+  outline: 2px solid tomato;
+}
+
+.element {
+  width: 380px;
+}
+.element:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.element:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
 
 .items .title {
+  margin-top: 0;
+  margin-bottom: 4px;
   color: var(--title-text-color);
   font-style: normal;
   font-weight: bold;
@@ -248,6 +406,7 @@ body {
 }
 
 .items .text {
+  margin: 0px;
   color: var(--primery-text-color);
   font-style: normal;
   font-weight: normal;
@@ -257,13 +416,24 @@ body {
 }
 
 .items .text-text {
-  background-color: aqua;
+  margin: 0px;
+  background-color: var(--accent-color);
   color: var(--button);
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
+}
+.button-items {
+  display: flex;
+  justify-content: center;
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
+
+.button-items .items + .items {
+  margin-left: 8px;
 }
 
 .button {
@@ -285,4 +455,5 @@ body {
 /* для підсвідки білого тексту в футері в подальшому заберу */
 .bg {
   background-color: #2f303a;
+  padding-top: 56px;
 }
