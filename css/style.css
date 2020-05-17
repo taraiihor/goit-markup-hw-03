@@ -18,11 +18,15 @@ body {
   color: var(--primery-text-color);
   font-family: Roboto, sans-serif;
 }
+img {
+  display: block;
+}
 
 ul {
   margin: 0;
   padding: 0;
 }
+
 .page-header {
 }
 
@@ -106,6 +110,8 @@ ul {
   color: var(--accent-color);
 }
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   text-align: center;
 }
 
@@ -145,6 +151,9 @@ ul {
   margin: 0;
   text-align: center;
 }
+.section-features {
+  padding-bottom: 94px;
+}
 
 .features-card {
   display: flex;
@@ -168,8 +177,7 @@ ul {
 }
 
 .section-features .text {
-  margin-top: 0;
-  margin-bottom: 94px;
+  margin: 0;
 
   font-style: normal;
   font-weight: normal;
@@ -179,6 +187,10 @@ ul {
 }
 
 /* секция чем мы занимаемся */
+.section-work {
+  padding-bottom: 94px;
+}
+
 .section-work .title {
   margin-top: 0;
   margin-bottom: 50;
@@ -197,7 +209,6 @@ ul {
 
 .work-cards .card + .card {
   margin-left: 30px;
-  margin-bottom: 94px;
 }
 
 .section-work .subtitle {
@@ -251,7 +262,7 @@ ul {
 }
 
 .section-team .autor {
-  margin-top: 0;
+  margin-top: 30px;
   margin-bottom: 10px;
   color: var(--title-text-color);
   font-style: normal;
@@ -325,6 +336,8 @@ ul {
 }
 
 .address .text {
+  margin: 0px;
+  padding-top: 10px;
   color: var(--button);
   font-style: normal;
   font-weight: normal;
@@ -334,6 +347,7 @@ ul {
 }
 
 .address .mail {
+  padding-top: 10px;
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
   font-weight: normal;
@@ -378,7 +392,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 .element {
@@ -426,7 +440,7 @@ ul {
 .button-items {
   display: flex;
   justify-content: center;
-  margin-top: 94px;
+  padding-top: 94px;
   margin-bottom: 50px;
 }
 
