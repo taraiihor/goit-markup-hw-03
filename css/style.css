@@ -31,7 +31,7 @@ ul {
 }
 
 .continer {
-  width: 1230px;
+  width: 1200px;
   margin: auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -153,6 +153,7 @@ ul {
   text-align: center;
 }
 .section-features {
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -165,7 +166,7 @@ ul {
 }
 
 .section-features .subtitle {
-  margin-top: 30;
+  margin-top: 30px;
   margin-bottom: 10px;
 
   color: var(--title-text-color);
@@ -189,6 +190,8 @@ ul {
 
 /* секция чем мы занимаемся */
 .section-work {
+  border-top: 1px solid #ececec;
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -218,7 +221,7 @@ ul {
 
 .section-work .desc {
   margin: 0;
-  width: 380px;
+  width: 370px;
   height: 70px;
   padding-top: 27px;
   padding-bottom: 27px;
@@ -380,7 +383,10 @@ ul {
   text-transform: uppercase;
 }
 
-.footer .copiraite {
+.copiraite {
+  padding-top: 18px;
+  padding-bottom: 21px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.4);
   font-style: normal;
   font-weight: normal;
@@ -389,6 +395,7 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
 }
+
 .items-card {
   display: flex;
   flex-wrap: wrap;
@@ -397,7 +404,7 @@ ul {
 }
 
 .element {
-  width: 380px;
+  width: 370px;
 }
 .element:not(:nth-child(3n)) {
   margin-right: 30px;
@@ -410,6 +417,8 @@ ul {
 .items .title {
   margin-top: 0;
   margin-bottom: 4px;
+  padding-left: 22px;
+  padding-right: 22px;
   color: var(--title-text-color);
   font-style: normal;
   font-weight: bold;
@@ -420,6 +429,8 @@ ul {
 
 .items .text {
   margin: 0px;
+  padding-left: 22px;
+  padding-right: 22px;
   color: var(--primery-text-color);
   font-style: normal;
   font-weight: normal;
@@ -430,6 +441,8 @@ ul {
 
 .items .text-text {
   margin: 0px;
+  padding-left: 22px;
+  padding-right: 22px;
   background-color: var(--accent-color);
   color: var(--button);
   font-style: normal;
